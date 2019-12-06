@@ -23,9 +23,37 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit the `ANSWERS.md` file to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Why would you use class component over function components (removing hooks from the question)?
+
+------------------
+	The situations where ones would choose class component over function components are 
+		1) when they have to deal managing state and anything that requires life cycle method
+		2) Function components and hooks are still new, which means a lot of projects or applications out there were still written by class components, so using class components can still be a requirement over function components
+------------------
+
+
 - [ ] Name three lifecycle methods and their purposes.
+
+------------------
+	constructor()
+		constructor's purpose is initializing state to be used in the component, and it is also where any explicit bindings take place inside a component.
+	render()
+		render allowing render JSX to DOM. It determines how the data is represented on a webpage.
+	componentDidMount()
+		similar to useEffect hook, it allows fetching data from API
+------------------
+
 - [ ] What is the purpose of a custom hook?
+
+------------------
+    A custom hook is a mechanism manually created to reuse a stateful logic. 
+    A stateful logic is the logic built into a component that usually deals with the state in a component. 
+------------------
+
 - [ ] Why is it important to test our apps?
+
+------------------
+    It is important to ensure that the application would not fail. If failures are detected earlier, it means it would be easier to fix the bug, and that it would save time and money in the long run. Testing acts as a safety net when refactoring.
+------------------
 
 ## Project Set Up
 
