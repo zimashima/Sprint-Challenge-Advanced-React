@@ -3,6 +3,7 @@ import axios from 'axios'
 
 import Player from './Player'
 
+
 export default class PlayerList extends Component{
     constructor(){
         super();
@@ -20,7 +21,7 @@ export default class PlayerList extends Component{
 
     render(){
         return(
-            <div>
+            <div className="cardContainer">
                 {this.state.playerData.map(eachPlayer => 
                     <Player data={eachPlayer}/>)}
             </div>

@@ -1,11 +1,14 @@
 import React from 'react';
 import PlayerList from './components/PlayersList'
 
+import {Container} from '@material-ui/core'
+import "./App.css"
+
 function App() {
   return (
-    <div className="App">
+    <Container>
       <PlayerList />
-    </div>
+    </Container>
   );
 }
 

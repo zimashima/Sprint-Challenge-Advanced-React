@@ -3,13 +3,12 @@ import {Card, Typography} from '@material-ui/core'
 
 export default function Player (props){
     return (
-        <Card>
-            <Typography variant="subtitle1">Name</Typography>
-            {props.data.name}
-            <Typography variant="subtitle1">Country</Typography>
+        <Card className="playerCard">
+            <Typography variant="h5" align="center" color="primary">{props.data.name}</Typography>
+            <Typography variant="subtitle1" color="textSecondary">Country</Typography>
             {props.data.country}
-            <Typography variant="subtitle1">Searches</Typography>
-            {props.data.search}
+            <Typography variant="subtitle1" color="textSecondary">Searches</Typography>
+            {props.data.searches}
         </Card>
     )
 }
