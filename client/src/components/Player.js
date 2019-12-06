@@ -1,15 +1,15 @@
 import React from 'react'
 import {Card, Typography} from '@material-ui/core'
 
-export default function Player (data){
+export default function Player (props){
     return (
         <Card>
             <Typography variant="subtitle1">Name</Typography>
-            {data.name}
+            {props.data.name}
             <Typography variant="subtitle1">Country</Typography>
-            {data.country}
+            {props.data.country}
             <Typography variant="subtitle1">Searches</Typography>
-            {data.search}
+            {props.data.search}
         </Card>
     )
 }

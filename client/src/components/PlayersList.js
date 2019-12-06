@@ -14,7 +14,6 @@ export default class PlayerList extends Component{
     componentDidMount(){
         axios.get('http://localhost:5000/api/players')
         .then (response => {
-            console.log(response)
             this.setState({playerData: response.data})
         })
     }
