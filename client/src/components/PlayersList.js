@@ -4,7 +4,9 @@ import axios from 'axios'
 import Player from './Player'
 
 
+
 export default class PlayerList extends Component{
+    
     constructor(){
         super();
         this.state = {
@@ -27,4 +29,5 @@ export default class PlayerList extends Component{
             </div>
         )
     }
+
 }

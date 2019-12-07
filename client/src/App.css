@@ -12,3 +12,39 @@
   padding: 20px;
   width: 300px;
 }
+
+.playerCard:hover{
+  background-color: skyblue;
+}
+
+.pink-mode__toggle {
+  background: white;
+  border-radius: 50px;
+  border: 1px solid black;
+  height: 20px;
+  position: relative;
+  width: 40px;
+}
+
+.toggle {
+  background: hotpink;
+  border-radius: 50px;
+  height: 18px;
+  left: 0;
+  position: absolute;
+  transition: 0.2s;
+  width: 20px;
+}
+
+.toggled {
+  left: 18px;
+}
+
+.pink-mode{
+  background: lightcoral
+}
+
+.navbar{
+  display:flex;
+  justify-content: space-between;
+}
